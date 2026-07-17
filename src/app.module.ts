@@ -6,6 +6,7 @@ import { EnvironmentModule } from './kernel/environment/environment.module';
 import { LoggingModule } from './kernel/logging/logging.module';
 import { ExceptionsModule } from './kernel/exceptions/exceptions.module';
 import { LifecycleModule } from './kernel/lifecycle/lifecycle.module';
+import { RegistryModule } from './kernel/registry/registry.module';
 
 @Module({
   imports: [
@@ -15,7 +16,8 @@ import { LifecycleModule } from './kernel/lifecycle/lifecycle.module';
     EnvironmentModule,
     LoggingModule,
     ExceptionsModule,
-     LifecycleModule,
+    LifecycleModule,
+    RegistryModule,
   ],
 })
 export class AppModule {}
