@@ -7,6 +7,9 @@ async function bootstrap() {
 
   app.useGlobalFilters(new HttpExceptionFilter());
 
+  // Enable lifecycle shutdown hooks
+  app.enableShutdownHooks();
+
   await app.listen(process.env.PORT ?? 3000);
 }
 
