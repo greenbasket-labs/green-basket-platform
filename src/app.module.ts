@@ -4,6 +4,7 @@ import { HealthModule } from './kernel/health/health.module';
 import { ConfigModule } from './kernel/config/config.module';
 import { EnvironmentModule } from './kernel/environment/environment.module';
 import { LoggingModule } from './kernel/logging/logging.module';
+import { ExceptionsModule } from './kernel/exceptions/exceptions.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { LoggingModule } from './kernel/logging/logging.module';
     ConfigModule,
     EnvironmentModule,
     LoggingModule,
+    ExceptionsModule,
   ],
 })
 export class AppModule {}
